@@ -1,0 +1,29 @@
+.duty__heading {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.duty__list {
+  display: flex;
+}
+.duty__img {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.duty__description {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  @include fonts(14px, 700, 1.14, 0.03em);
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--nav-text-color);
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+}
